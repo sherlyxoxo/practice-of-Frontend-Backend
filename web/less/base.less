@@ -1,0 +1,76 @@
+//out:false
+
+@vw:3.75vw;
+
+*{margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  body{
+      padding: 0;
+      margin: 0;
+      color: #333;
+      background-color: #F1f1f1;
+      font-family: PingFangSC-Regular;
+  }
+  
+  img {
+      display: block;
+      max-width: 100%;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin-bottom: 0;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  
+    p{
+        margin: 0;
+    }
+  
+    a:hover{
+        text-decoration: none;
+    }
+  
+    h1, h2, h3, h4, h5, h6,i{
+        margin: 0;
+    }
+
+
+// 公共底部
+  footer{ 
+  margin-top: (60/@vw);
+  .menu{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: (4/@vw) (40/@vw);
+      width: 100%;
+      height: (58/@vw);
+      background-color: #fff;
+      text-align: center;
+     
+      a{
+          color: #28ABFC;
+      }
+     
+      i{
+          font-size: (35/@vw);
+          line-height: (35/@vw) ;
+      }
+     
+     h5{
+      font-size: (14/@vw);
+      line-height:(14/@vw) ;
+     }
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博学谷首页</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./web//lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./web/css/index.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 头部导航 -->
+        <div class="nav">
+            <div class="email">
+                <a href="javascript:;">
+                    <img src="./web/images/邮件.png" alt="">
+                </a>               
+            </div>
+            <div class="logo">     
+                <a href="javascript:;">
+                    <img src="./web/images/headerLogo.png" alt="">
+                </a>             
+            </div>
+            <div class="search">
+                <a href="javascript:;">
+                    <i class="iconfont icon-sousuo"></i>
+                </a>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">   
+            <a href="javascript:;"></a>
+        </div>
+        <!-- banner -->
+    </header>
+    <!-- 头部 -->
+
+
+    <!-- 内容 -->
+    <section>
+        <div class="pro panel">
+            <div class="title">
+                <h3>· 就业课 ·</h3>
+            </div>
+            <div class="content_pro">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <a href="javascript:;">
+                                <img src="./web/images/fe-list.png" alt="">
+                            </a>      
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <a href="javascript:;">
+                                <img src="./web/images/java.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <a href="javascript:;">
+                                <img src="./web/images/data.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <a href="javascript:;">
+                                <img src="./web/images/python.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <a href="javascript:;">
+                                <img src="./web/images/ui.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <a href="javascript:;">
+                                <img src="./web/images/fe-list.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="course panel">
+            <div class="title">
+                <h3>· 微课 ·</h3>
+            </div>
+            <div class="content_course">
+                <ul id="course_list">
+                    <!-- 通过模板字符串渲染li -->
+                    <!-- <li>
+                        <a href="javascript:;">
+                            <div class="pic">                          
+                            </div>
+                            <h4>【前端】微信小程序</h4>
+                            <div class="detail">
+                                <p>20人学习</p><span>￥199</span>
+                            </div>
+                        </a>    
+                    </li> -->
+                </ul>
+
+            </div>
+            
+        </div>
+
+    </section>
+    <!-- 内容 -->
+
+
+    <!-- 底部 -->
+    <footer>
+    <div class="menu">
+        <div class="index">
+            <a href="./index.html">
+                <i class="iconfont icon-homepage"></i>
+                <h5>首页</h5>
+            </a>
+           
+        </div>
+        <div class="cate">
+            <a href="./category.html">
+                <i class="iconfont icon-manage_fill"></i>
+                <h5>分类</h5>
+            </a> 
+        </div>
+    </div>
+    </footer>
+    <!-- 底部 -->
+
+    <!-- 引入模板引擎 -->
+    <script src="./web/lib/art-template/template-web.js"></script>
+    <!-- 定义模板 -->
+    <script type="text/html" id="li-tpl">
+        {{each}}
+        <li>
+            <a href="javascript:;">
+                <div class="pic">  
+                       <img src="{{$value.img}}" alt="">                     
+                </div>
+                <h4>{{$value.name}}</h4>
+                <div class="detail">
+                    <p>{{$value.count}}人学习</p><span>￥{{$value.price}}</span>
+                </div>
+            </a>    
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 引入jq -->
+    <script src="./web/lib/jquery/jquery-3.6.0.min.js"></script>
+    <!-- 引入axios -->
+    <script src="./web/lib/axios/axios.min.js"></script>
+   
+    <!-- 引入自己的js -->
+    <script src="./web/js/index.js"></script>
+
+    
+</body>
+</html>

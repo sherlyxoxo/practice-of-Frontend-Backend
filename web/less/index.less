@@ -1,0 +1,155 @@
+// out:../css/
+
+@import 'base.less';
+// 头部
+header{
+   
+    .nav{
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: (15/@vw);
+        width: 100%;
+        height: (64/@vw);
+        background-color: #446ADF;
+        
+        a{
+            display: inline-block;
+            height: (34/@vw);
+            img{
+                height: 100%;       
+            }
+            i{
+                font-size: (34/@vw);
+                line-height:(34/@vw) ;
+                 color: #fff;
+             }
+        }
+       
+        .logo{   
+        text-align: center;
+        }
+    }
+    // banner
+    .banner{
+       margin-top: (64/@vw);
+        a{
+        display: inline-block; 
+        width: 100%;
+        height: (170/@vw);
+        background: url(../images/FE.png) no-repeat 80% 50% ;
+        background-size: cover;
+
+        }
+        
+    }
+   
+}
+
+// 内容
+section{
+    width: 100%;
+    
+//  公共面板  
+    .panel{
+        margin-top: (16/@vw);
+        min-height: (242/@vw);
+        background-color: #fff;
+        .title{
+            height: (54/@vw);
+            text-align: center;
+            h3{
+               font-weight: normal;
+               line-height: (54/@vw);
+               font-size: (18/@vw);
+               color: #446ADF; 
+            }
+        }
+      
+    }
+// 就业课内容
+    .content_pro{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                display: inline-block;
+                margin-bottom: 1px;
+                width: (124/@vw);
+                height: (70/@vw);
+             
+            
+                &:nth-last-child(-n+3){
+                  margin-top: (32/@vw);
+                  margin-bottom: (18/@vw);
+                }
+                .item{
+                    margin: 0 auto;
+                    width: (70/@vw);
+                    height: (70/@vw);
+                    border-radius: 50%;
+                    background-color: #fff;
+                    overflow: hidden;
+                    img{
+                 
+                        height: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+// 微课内容
+    .content_course{ 
+            
+        ul{
+            display: flex;   
+            justify-content: space-between;   
+            flex-wrap: wrap;
+            padding: 0 (6/@vw);  
+            background: linear-gradient(#fff, #F1f1f1); 
+            
+            li{
+            margin-bottom: (22/@vw);
+            min-height: (100/@vw);  
+            width: 49%;
+           
+            //  封面  
+            .pic{
+                width: 100%;
+                height: (100/@vw);  
+                background-color: blue;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            // 标题
+            h4{
+                margin: (6/@vw) 0;
+                font-size: (16/@vw); 
+                color: #333;
+            }
+            // 详情
+            .detail{
+                display: flex;
+                justify-content: space-between;
+                font-size: (14/@vw);
+                span{
+                    color: #446ADF;
+                }
+                p{
+                    color: #d0d0d0;
+                }
+            }
+            }
+        }
+    }
+
+
+}
+
